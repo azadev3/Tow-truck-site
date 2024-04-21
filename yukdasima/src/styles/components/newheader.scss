@@ -1,0 +1,186 @@
+@import "../global.scss";
+
+.new-mobile-header {
+  width: 100%;
+  min-height: 70px;
+  background-color: $yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left-logo {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+    }
+  }
+
+  .open-toggle {
+    font-size: 50px;
+    color: black;
+    margin-right: 24px;
+  }
+  .open-toggle:active {
+    transform: scale(0.96);
+  }
+
+  .togglemenu {
+    position: fixed;
+    z-index: 1000000000000000;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    inset: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    animation: openedTogglemenu;
+    animation-duration: 300ms;
+    @keyframes openedTogglemenu {
+     from {
+          opacity: 0;
+          transform: translateX(-10rem);
+     }to{
+          opacity: 1;
+          transform: translateX(0);
+     }
+    }
+    .header-togglemenu {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left-logo-toggle {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .close-toggle {
+        color: black;
+        font-size: 45px;
+        margin-right: 24px;
+      }
+      .close-toggle:active {
+        transform: scale(0.95);
+      }
+    }
+
+    .navbar-area {
+      position: relative;
+      top: 15px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-right: 24px;
+      padding-left: 24px;
+
+      .navlink {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        color: black;
+        text-decoration: none;
+        font-size: 21px;
+        font-weight: 500;
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px;
+        .dropdown-inner-open {
+          font-size: 26px;
+        }
+      }
+
+      .sub-item-menu {
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        animation-name: subItem;
+        animation-duration: 200ms;
+        @keyframes subItem {
+          from {
+            transform: translateY(-1rem);
+          }
+          to {
+            transform: translateY(0);
+          }
+        }
+        .sublink {
+          text-decoration: none;
+          font-size: 20px;
+          padding: 14px;
+          background-color: $blue;
+          width: 100%;
+          color: #fff;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .bottom-toggle {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 24px;
+      position: relative;
+      top: 90px;
+
+      .select-language {
+        width: 100%;
+        height: 50px;
+        padding: 5px 20px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 24px;
+        select {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          text-transform: uppercase;
+          font-size: 22px;
+          font-weight: 400;
+          color: #303030;
+          border: 1px solid $blue;
+          border-radius: 7px;
+          padding: 6px 17px;
+          cursor: pointer;
+          transition: 200ms ease-out;
+        }
+        select:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

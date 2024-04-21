@@ -1,0 +1,79 @@
+@import "../global.scss";
+
+.about-page-wrappered {
+  width: 100%;
+  height: auto;
+
+  .about-page-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .top-background {
+      width: 100%;
+      height: 422px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-image: url(../aboutpagebackground.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      h1 {
+        color: rgba(255, 255, 255, 1);
+        font-weight: 500;
+        font-size: 40px;
+      }
+    }
+
+    .who-we-are {
+      padding-top: 48px;
+      width: 100%;
+      padding-left: 164px;
+      padding-right: 164px;
+      height: auto;
+      display: grid;
+      grid-template-columns: 70% 30%;
+
+      .left {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        h1 {
+          color: rgba(0, 0, 0, 1);
+          font-weight: 500;
+          font-size: 32px;
+        }
+
+        p {
+          margin-top: 28px;
+          text-align: start;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(0, 0, 0, 0.8);
+        }
+      }
+
+      .image-area {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        overflow: hidden;
+        img {
+          width: 333px;
+          height: 386px;
+          object-fit: cover;
+          border-radius: 12;
+        }
+      }
+    }
+
+    @include WhyWeAreStyles();
+  }
+}

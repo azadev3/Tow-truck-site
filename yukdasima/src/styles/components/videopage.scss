@@ -1,0 +1,89 @@
+@import "../global.scss";
+
+.video-page {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 164px;
+  padding-right: 164px;
+
+  .video-title {
+    width: 100%;
+    margin-top: 38px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    h1 {
+      color: rgba(0, 0, 0, 1);
+      font-weight: 500;
+      font-size: 40px;
+    }
+  }
+
+  .grid-videos {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .video-item {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      video {
+        transition: 150ms filter ease-in-out;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+      }
+      video:hover {
+        filter: contrast(1.5);
+      }
+
+      .play-btn {
+          position: absolute;
+          z-index: 1000;
+          cursor: pointer;
+          transition: 150ms ease-in-out;
+      }
+      .play-btn:hover {
+          transform: scale(1.05);
+          filter: contrast(23);
+      }
+      .play-btn:active {
+          transform: scale(0.95);
+      }
+    }
+  }
+
+  .pagination-area {
+     width: 100%;
+     height: auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 60px;
+
+     .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+          background-color: $blue;
+          color: #fff;
+     }
+
+     .css-wjh20t-MuiPagination-ul {
+          gap: 12px;
+     }
+  }
+
+}

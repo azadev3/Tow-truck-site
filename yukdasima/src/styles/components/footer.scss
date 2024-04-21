@@ -1,0 +1,170 @@
+@import "../global.scss";
+
+.footer-wrappered {
+  width: 100%;
+  height: auto;
+  background-color: rgba(13, 110, 253, 1);
+  margin-top: 120px;
+  padding-left: 164px;
+  padding-right: 164px;
+  padding-top: 66px;
+  padding-bottom: 60px;
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    .footer-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //  .navs {
+      //    display: flex;
+      //    align-items: center;
+      //    justify-content: flex-start;
+      //    gap: 32px;
+      //    .footer-header-link {
+      //      color: rgba(255, 255, 255, 1);
+      //      font-size: 18px;
+      //      font-weight: 500;
+      //      text-decoration: none;
+      //      cursor: pointer;
+      //      transition: 100ms ease-in-out;
+      //    }
+      //    .footer-header-link:hover {
+      //      color: $yellow;
+      //    }
+      //  }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 32px;
+        .navbar {
+          position: relative;
+          .li-item-header {
+            padding: 5px 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+          }
+          .li-item-header:hover {
+            color: $yellow;
+          }
+
+          .sub-item {
+            position: absolute;
+            left: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 100;
+            background-color: #fff;
+            width: auto;
+            min-height: 80px;
+            margin-top: 3px;
+            border-top: none !important;
+            border: 1px solid rgba(156, 156, 156, 0.397);
+            animation: opened 200ms ease-in-out forwards normal;
+            @keyframes opened {
+              from {
+                transform: translateX(-20px);
+              }
+              to {
+                transform: translateX(0);
+              }
+            }
+            .subitem-link {
+              color: rgb(0, 0, 0);
+              font-weight: 400;
+              font-size: 16px;
+              text-decoration: none;
+              padding: 5px 10px;
+              width: 100%;
+              text-wrap: nowrap;
+            }
+            .subitem-link:hover {
+              background-color: $blue;
+              color: $yellow;
+            }
+          }
+        }
+      }
+    }
+
+    .content-footer {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 22px;
+      padding-top: 100px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .wrapper-icons {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        .tel-li {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          text-decoration: none;
+          color: rgba(255, 255, 255, 1);
+          font-weight: 400;
+          font-size: 18px;
+          transition: 100ms ease-in-out;
+        }
+        .tel-li:hover {
+          color: $yellow;
+        }
+      }
+
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 22px;
+        .image-wrapper-social {
+          width: 40px;
+          height: 40px;
+          background-color: rgba(255, 255, 255, 0.42);
+          border-radius: 100%;
+          display: flex;
+          overflow: hidden;
+          align-items: center;
+          justify-content: center;
+          transition: 100ms ease-in-out;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+          }
+        }
+        .image-wrapper-social:hover {
+          background-color: $yellow;
+        }
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 1);
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}

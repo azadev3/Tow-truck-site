@@ -1,0 +1,438 @@
+@import './global.scss';
+
+
+//HAQQIMIZDA
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+     .about-page-wrappered .about-page-container .top-background {
+          background-size: auto;
+     }
+
+     .about-page-wrappered .about-page-container .who-we-are {
+          padding-left: 24px;
+          padding-right: 24px;
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .about-page-wrappered .about-page-container .who-we-are .image-area {
+          justify-content: center;
+          margin-top: 3rem;
+     }
+     .about-page-wrappered .about-page-container .who-we-are .image-area img {
+          width: 100%;
+          height: 600px;
+     }
+
+
+     .about-page-wrappered .about-page-container .why-we-wrappered .why-we-container {
+          padding-left: 24px;
+          padding-right: 24px;
+
+     }
+
+     .about-page-wrappered .about-page-container .why-we-wrappered .why-we-container .why-we-grid .grid-items {
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 268px) {
+     .about-page-wrappered .about-page-container .top-background {
+          background-size: auto;
+     }
+
+     .about-page-wrappered .about-page-container .who-we-are {
+          padding-left: 24px;
+          padding-right: 24px;
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .about-page-wrappered .about-page-container .who-we-are .image-area {
+          justify-content: center;
+          margin-top: 3rem;
+     }
+     .about-page-wrappered .about-page-container .who-we-are .image-area img {
+          width: 100%;
+          height: 300px;
+     }
+
+
+     .about-page-wrappered .about-page-container .why-we-wrappered .why-we-container {
+          padding-left: 24px;
+          padding-right: 24px;
+
+     }
+
+     .about-page-wrappered .about-page-container .why-we-wrappered .why-we-container .why-we-grid .grid-items {
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .about-page-wrappered .about-page-container .why-we-wrappered .why-we-container .why-we-grid {
+          padding: 5px;
+     }
+     .about-page-wrappered .about-page-container .why-we-wrappered .why-we-container .why-we-grid .grid-items .item-why-we {
+          grid-template-columns: 25% 75%;
+     }
+     .about-page-wrappered .about-page-container .why-we-wrappered .why-we-container .title h1 {
+          font-size: 33px;
+     }
+     .about-page-wrappered .about-page-container .top-background h1 {
+          font-size: 35px;
+     }
+}
+
+
+//XIDMETLERIMIZ
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+     .our-services {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .our-services .grid-services {
+          grid-template-columns: repeat(3, 1fr);
+     }
+     .our-services-pagetitle h1 {
+          font-size: 33px;
+     }
+}
+@media screen and (max-width: 768px) and (min-width: 468px) {
+     .our-services {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .our-services .grid-services {
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+@media screen and (max-width: 468px) and (min-width: 268px) {
+     .our-services {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .our-services .grid-services {
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .our-services-pagetitle h1 {
+          font-size: 30px;
+     }
+}
+
+//XIDMETLERIMIZ DAXILI
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+     .inner-service-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .inner-service-page .container-bottom-sides {
+          grid-template-columns: repeat(1, 1fr);
+          row-gap: 50px;
+     }
+}
+@media screen and (max-width: 768px) and (min-width: 268px) {
+     .inner-service-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .inner-service-page .container-bottom-sides {
+          grid-template-columns: repeat(1, 1fr);
+          row-gap: 50px;
+     }
+
+     .inner-service-page .container-bottom-sides .filtered {
+          padding: 10px;
+     }
+     .inner-service-page .title-inner-service h1 {
+          font-size: 30px;
+     }
+
+     .inner-service-page .container-bottom-sides .right-content {
+          padding: 0px 20px 20px 20px;
+     }
+}
+
+//BLOQ
+@media screen and (max-width: 1300px) and (min-width: 968px) {
+     .blog-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+}
+@media screen and (max-width: 968px) and (min-width: 568px) {
+     .blog-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .blog-page .grid-blog {
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+@media screen and (max-width: 568px) and (min-width: 268px) {
+     .blog-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .blog-page .grid-blog {
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .blog-page .title-blogpage h1 {
+          font-size: 30px;
+     }
+}
+
+//BLOQ DAXILI
+@media screen and (max-width: 1300px) and (min-width: 968px) {
+     .blog-inner-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+}
+
+@media screen and (max-width: 968px) and (min-width: 568px) {
+     .blog-inner-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .blog-inner-page .top {
+          grid-template-columns: repeat(1, 1fr);
+          row-gap: 40px;
+     }
+}
+@media screen and (max-width: 568px) and (min-width: 268px) {
+     .blog-inner-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .blog-inner-page .top {
+          grid-template-columns: repeat(1, 1fr);
+          row-gap: 30px;
+     }
+
+     .blog-inner-page .top .left h1 {
+          font-size: 30px;
+          line-height: unset;
+     }
+
+     .blog-inner-page .top .right {
+          height: 300px;
+     }
+}
+
+//QALEREYA - VIDEOLAR
+@media screen and (max-width: 1300px) and (min-width: 968px) {
+     .gallery-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .video-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+}
+@media screen and (max-width: 968px) and (min-width: 468px) {
+     .gallery-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .gallery-page .grid-images {
+          grid-template-columns: repeat(2, 1fr);
+     }
+     .app .modal-wrapper img {
+          width: 95% !important;
+          height: 460px !important;
+     }
+
+
+     .video-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .video-page .grid-videos {
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+@media screen and (max-width: 468px) and (min-width: 268px) {
+     .gallery-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .gallery-page .grid-images {
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .app .modal-wrapper img {
+          width: 95% !important;
+          height: 260px !important;
+     }
+     .gallery-page .gallery-title h1 {
+          font-size: 30px;
+     }
+
+
+     .video-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .video-page .grid-videos {
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .video-page .video-title h1 {
+          font-size: 30px;
+     }
+}
+
+//KORPORATIV
+@media screen and (max-width: 1200px) and (min-width: 968px) {
+     .corporative-page {
+          margin-top: 0;
+     }
+
+     .corporative-page .description-area {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .corporative-page .grid-hero-item {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+     .corporative-page .form-area .form .field-area {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+}
+
+@media screen and (max-width: 968px) and (min-width: 568px) {
+     .corporative-page {
+          margin-top: 0;
+     }
+
+     .corporative-page .description-area {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .corporative-page .grid-hero-item {
+          padding-left: 24px;
+          padding-right: 24px;
+          grid-template-columns: repeat(2, 1fr);
+     }
+     .corporative-page .form-area .form .field-area {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+}
+
+@media screen and (max-width: 568px) and (min-width: 268px) {
+     .corporative-page {
+          margin-top: 0;
+     }
+
+     .corporative-page .description-area {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .corporative-page .grid-hero-item {
+          padding-left: 24px;
+          padding-right: 24px;
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .corporative-page .form-area .form .field-area {
+          padding-left: 24px;
+          padding-right: 24px;
+          grid-template-columns: repeat(1, 1fr);
+          margin-top: 0;
+     }
+     .corporative-page .form-area .title-form h1 {
+          font-size: 24px;
+     }
+     .corporative-page .top-background-wrappered .top-background h1 {
+          font-size: 35px;
+     }
+
+     .corporative-page .form-area .form .submit-area .submit-btn {
+          padding: 10px 95px;
+     }
+}
+
+//ELAQE
+@media screen and (max-width: 1330px) and (min-width: 968px) {
+     .contact-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .contact-page .grid-contact-area  {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 50px;
+     }
+
+     .contact-page .bottom-form-area .form-container {
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .contact-page .bottom-form-area {
+          min-height: 1200px;
+     }
+}
+@media screen and (max-width: 968px) and (min-width: 568px) {
+     .contact-page {
+          padding-left: 24px;
+          padding-right: 24px;
+     }
+
+     .contact-page .grid-contact-area  {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 40px;
+     }
+
+     .contact-page .bottom-form-area .form-container {
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .contact-page .bottom-form-area {
+          min-height: 1200px;
+     }
+}
+@media screen and (max-width: 568px) and (min-width: 268px) {
+     .contact-page {
+          padding-left: 10px;
+          padding-right: 10px;
+     }
+
+     .contact-page .grid-contact-area  {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 30px;
+          padding-left: 10px;
+          padding-right: 10px;
+     }
+
+     .contact-page .bottom-form-area .form-container {
+          grid-template-columns: repeat(1, 1fr);
+          padding-left: 10px;
+          padding-right: 10px;
+     }
+     .contact-page .bottom-form-area {
+          min-height: 1000px;
+     }
+     .contact-page .bottom-form-area .form-container .left-form h1 {
+          font-size: 28px;
+          line-height: unset;
+          
+     }
+
+     .contact-page .bottom-form-area .form-container .left-form p {
+          margin-top: 0;
+          padding-right: 100px;
+     }
+     .contact-page .bottom-form-area .form-container .right-form form {
+          display: unset;
+     }
+     .contact-page .bottom-form-area .form-container .right-form form button[type=submit] {
+          width: 45%;
+     }
+     .contact-page .bottom-form-area .form-container .right-form form input, .contact-page .bottom-form-area .form-container .right-form form textarea {
+          width: 60%;
+     }
+
+}
